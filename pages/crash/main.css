@@ -1,0 +1,73 @@
+@font-face{
+    font-family: "futura";
+    src: url("../../css/FuturaBookfont.ttf") format("truetype");
+}
+body{
+    font-family: 'futura';
+    background-color: #2b2c2c;
+    color: #dddddd;
+}
+div{
+    position: relative;
+}
+#title h1{
+    font-size: 3.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#map{
+    position: relative;
+}
+a:hover{
+    text-decoration: none;
+    border-bottom: 2px dotted #c6093b;
+}
+/* #injuryChart{
+    background-color: linen;
+}
+#deathChart{
+    background-color: cornflowerblue;
+} */
+
+.d3-tip {
+    line-height: 1;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-weight: 100;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.yaxis line, .axis line{
+    stroke: #dddddd;
+}
+
+.taxis line, .domain{
+    stroke: none;
+}
+
+/*** Navbar Styling ***/
+#mainNav{
+    background-color: #2b2c2c;
+}
+/* .navbar-default .navbar-brand{
+    color: #f5f5f5;
+    font-size: 22px;
+    font-weight: bold;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus{
+    color: #f0e68c;
+}
+.navbar-menu-button{
+    background-color: #dddddd;
+    font-weight: bold;
+    font-family: 'futura';
+}
+.navbar-default .navbar-nav > li > a{
+    color: #f5f5f5;
+    font-size: 16px;
+} */

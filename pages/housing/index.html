@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>H-GAC Housing</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel='stylesheet' href='../housing/main.css'>
+
+    <!-- TopoJSON -->
+    <script src='../../lib/topojson.js'></script>
+    <!-- jQuery -->
+    <script src='../../lib/jquery-3.3.1.js'></script>
+    <!-- D3 -->
+    <script src='../../lib/d3.js'></script>
+    <!-- D3 Tooltip -->
+    <script src='../../lib/d3-tip.js'></script>
+    <!-- Font Awesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    
+  </head>
+  <body>
+    <!-- Create the navigation bar at the top of the page -->
+    <nav class="navbar navbar-expand-sm navbar-dark" id="mainNav">
+      <a class="navbar-brand" href="../../index.html">
+        <img src="../../img/hgac.png" alt="H-GAC Logo" style="width:75px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="../../pages/crash/">Crashes</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="../../pages/demographics/">Demographics</a>
+              </li>
+              <li class='nav-item'>
+                  <a class='nav-link' href='../../pages/housing/'>Housing</a>
+              </li>
+          </ul>
+      </div>
+    </nav>
+    <!-- Body of the HTML page -->
+    <div>
+      <div class='container'>
+          <div class='row'>
+              <div class='col-sm-12'>
+                  <h1>Housing</h1>
+              </div>
+              <div class='col-sm-12'>
+                  <h4>Households in the Houston Region</h4>
+                  <p>The map and chart display the number of households for each census tract in the region.</p>
+              </div>
+          </div>
+          <div class='row'>
+              <div class='col-sm-4' id='householdMap'></div>
+              <div class='col-sm-8' id='householdChart'></div>
+          </div>
+          <div class='row' id='housingContainer'>
+              <div class='col-sm-12'>
+                  <h4>Housing Units in the Houston Region</h4>
+                  <p>The map displays the number of housing units for each county. 
+                    Click on a county in the map and the median house value and median household income
+                    trends will display in the charts to the right of the map.<br/>
+                    Hovering over a county will display the number of housing units, the median house value,
+                    and median household income for 2018.
+                </p>
+              </div>
+          </div>
+          <div class='row'>
+              <div class='col-sm-4' id='housingMap'></div>
+              <div class='col-sm-4' id='valueChart'></div>
+              <div class='col-sm-4' id='incomeChart'></div>
+          </div>
+          <div class='row' id='incomeContainer'>
+              <div class='col-sm-12'>
+                  <h4>Household Income in the Houston region</h4>
+                  <p>The map and chart display the household income breakdown of the population.</p>
+              </div>
+              <div class='col-sm-12'>
+                  <button type='button' id='below25' class='btn btn-outline-light col-sm-2'>Below 25K</button>
+                  <button type='button' id='inc25to50' class='btn btn-outline-light col-sm-2'>25 - 50K</button>
+                  <button type='button' id='inc50to100' class='btn btn-outline-light col-sm-2'>50 - 100K</button>
+                  <button type='button' id='above100' class='btn btn-outline-light col-sm-2'>Above 100K</button>
+              </div>
+          </div>
+          <div class='row' id='incomeBottomContainer'>
+              <div class='col-sm-4' id='incomeMap'></div>
+              <div class='col-sm-8' id='houseIncomeChart'></div>
+          </div>
+      </div>
+  </div>
+
+    <!-- Optional JavaScript -->
+    <script src='../housing/main.js'></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

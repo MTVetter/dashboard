@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>H-GAC Crashes</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel='stylesheet' href='css/main.css'>
+
+    <!-- TopoJSON -->
+    <script src='lib/topojson.js'></script>
+    <!-- jQuery -->
+    <script src='lib/jquery-3.3.1.js'></script>
+    <!-- D3 -->
+    <script src='lib/d3.js'></script>
+    <!-- D3 Tooltip -->
+    <script src='lib/d3-tip.js'></script>
+    <!-- Font Awesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    
+  </head>
+  <body>
+    <!-- <div id='map'></div> -->
+    <!-- Create the navigation bar at the top of the page -->
+    <nav class="navbar navbar-expand-md navbar-dark" id="mainNav">
+      <a class="navbar-brand" href="#">
+        <img src="img/hgac.png" alt="H-GAC Logo" style="width:75px;">
+      </a>
+    </nav>
+    <!-- Body of the HTML page -->
+    <div id='map'></div>
+    <div id='title'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-sm-12'>
+                    <h1>H-GAC Dashboard Introduction</h1>
+                </div>
+            </div>
+            <br/>
+            <div class='row'>
+                <div class='col-sm-12'>
+                    <a href='pages/crash/index.html' title='Go to Crashes' id='crashes'>
+                        <h5 id='crashLink'><i class='far fa-circle' style='color:#ddd;'></i> Crashes</h5>
+                    </a>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-sm-6'>
+                    <p>Motorized Injuries (Deaths): <br/><b>78,612 (396)</b></p>
+                </div>
+                <div class='col-sm-6'>
+                    <p>Non-Motorized Injuries (Deaths): <br/><b>2,015 (147)</b></p>
+                </div>
+            </div>
+            <br/>
+            <div class='row'>
+                <div class='col-sm-12'>
+                    <a href='pages/demographics/index.html' title='Go to Demographics' id='demographics'>
+                        <h5 id='demoLink'><i class='far fa-circle' style='color: #ddd;'></i> Demographics</h5>
+                    </a>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-sm-6'>
+                    <p><b>62.5%</b> minority population</p>
+                </div>
+                <div class='col-sm-6'>
+                    <p><b>902,921</b> households with 1 or fewer cars</p>
+                </div>
+            </div>
+            <br />
+            <div class='row'>
+                <div class='col-sm-12'>
+                    <a href='pages/housing/index.html' title='Go to Housing' id='housing'>
+                        <h5 id='houseLink'><i class='far fa-circle' style='color: #ddd;'></i> Housing</h5>
+                    </a>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-sm-6'>
+                    <p><b>2,368,252</b> households in the region</p>
+                </div>
+                <div class='col-sm-6'>
+                    <p><b>311,427</b> households under the poverty rate</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='footer'>
+        <p>Background map displays the unemployment rate for the census tracts within H-GAC. All data is from the 2018 American Community Survey (ACS).</p>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src='js/main.js'></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

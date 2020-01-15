@@ -1,0 +1,53 @@
+@font-face{
+    font-family: "futura";
+    src: url("../../css/FuturaBookfont.ttf") format("truetype");
+}
+body{
+    font-family: 'futura';
+    background-color: #2b2c2c;
+    color: #dddddd;
+}
+div{
+    position: relative;
+}
+.axis line, .yaxis line{
+    fill: none;
+    stroke-width: 1;
+    stroke: #dddddd;
+    opacity: 0.1;
+}
+.tick line{
+    stroke-dasharray: 2, 5;
+}
+.domain{
+    stroke: #dddddd;
+    stroke-dasharray: 2, 5;
+    opacity: 0.1;
+}
+.d3-tip {
+    line-height: 1;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-weight: 100;
+    font-size: 12px;
+    border-radius: 5px;
+}
+#ethinicContainer{
+    margin-top: 100px;
+}
+#educationContainer{
+    margin-top: 100px;
+}
+#educationBottomContainer{
+    margin-bottom: 100px;
+}
+h1{
+    font-size: 3.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+a:hover{
+    text-decoration: none;
+    border-bottom: 2px dotted #c6093b;
+}
